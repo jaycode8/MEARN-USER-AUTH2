@@ -1,0 +1,74 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    background: #121212;
+}
+.kitise{
+    width: 50rem;
+    height: 22rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+    position: relative;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 20rem auto;
+}
+.avatar .img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+}
+.img img{
+    width: 100%;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-around;
+}
+.kitise button{
+    width: 7rem;
+    height: 2rem;
+    bottom: 10px;
+    right: 10px;
+    color: #121212;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .kitise{
+        width: 45rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .kitise{
+        width: 85%;
+        height: 80%;
+        grid-template-columns: unset;
+        grid-template-rows: 15rem auto;
+    }
+    .avatar .img{
+        width: 190px;
+        height: 190px;
+    }
+    .content{
+        padding: 0 0 0 20px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .kitise{
+        grid-template-rows: 10rem auto;
+    }
+    .avatar .img{
+        width: 150px;
+        height: 150px;
+    }
+    .content{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}

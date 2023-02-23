@@ -1,0 +1,215 @@
+*{
+    color: #fff;
+}
+.kyulu{
+    position: relative;
+    overflow: hidden;
+}
+video {
+    object-fit: cover;
+}
+section{
+    width: 25rem;
+    height: 30rem;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(20,204,75), 
+                0 0 20px blue;
+    right: 10rem;
+    border-radius: 10px;
+    background: linear-gradient(143deg,rgba(255,0,0,0.493),
+                                rgba(0,0,255,0.5),
+                                rgba(255,0,0,0.5));
+}
+section form{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    margin-top: 3rem;
+}
+form input,
+section button{
+    width: 100%;
+    margin: 10px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid rgba(255,255,255);
+    padding: .4rem;
+    background: rgba(59, 55, 153,0.404);
+}
+form input::placeholder{
+    font-size: 15px;
+    color: #fff;
+}
+form input:focus{
+    border-color: rgb(255, 0, 191);
+}
+#passw2{
+    margin-bottom: 2rem;
+}
+form input[type="submit"],
+section button{
+    border-bottom: unset;
+    width: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+}
+section label{
+    left: 1.5rem;
+    top: 2rem;
+    font-size: 30px;
+}
+section button{
+    width: 11rem !important;
+}
+.fa-float{
+    right: 10rem;
+    top: 2.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 1s ;
+    animation: float 2s linear infinite;
+}
+.fa-float:hover{
+    scale: 1.2;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.msg{
+    width: 24rem;
+    height: 2.0rem;
+    top: -4rem;
+    right: 10px;
+    background: rgb(238, 10, 10);
+    color: #121212;
+    font-weight: 1000;
+    transition: all 2s;
+}
+.hideMsg{
+    display: none;
+}
+.msgIcon{
+    right: 10px;
+    border-radius: 50%;
+}
+#success{
+    background: green;
+    color: #fff;
+}
+.msgIcon::after{
+    content: '\f058';
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+@media screen and (max-width:600px) {
+    section{
+        right: 5rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    section{
+        width: 23rem;
+        height: 28rem;
+        right: 3rem;
+    }
+    section label{
+        font-size: 25px;
+    }
+    .fa-float{
+        font-size: 1.5rem;
+    }
+    section button{
+        width: 10.3rem !important;
+    }
+    .msg{
+        right: -15px !important;
+    }
+}
+
+@media screen and (max-width:430px){
+    section{
+        width: 80%;
+        right: 2.5rem;
+    }
+    section button{
+        width: 9.5rem !important;
+    }
+    form input,
+    section button{
+        padding: .3rem;
+        margin: 8px;
+    }
+    .msg{
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    form input[type="submit"],
+    section button{
+        width: 100% !important;
+    }
+    section button{
+        width: 10rem !important;
+    }
+    section label{
+        font-size: 22px;
+    }
+    section form{
+        padding: 10px;
+    }
+    .fa-float{
+        right: 5rem;
+    }
+    .msg{
+        right: -6px !important;
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:360px){
+    section{
+        width: 90%;
+        right: 1.3rem;
+    }
+}
+
+@media screen and (max-width:340px){
+    section{
+        width: 90%;
+        height: 80%;
+        right: 1rem;
+    }
+    section label{
+        font-size: 15px;
+    }
+    .fa-float{
+        font-size: 1.2rem;
+    }
+    form input,
+    section button{
+        padding: .2rem;
+        font-size: 11px;
+        margin: 10px;
+    }
+    .msg{
+        top: -2.5rem;
+        right: -7px !important;
+        width: 19rem;
+        font-size: 15px;
+    }
+}
