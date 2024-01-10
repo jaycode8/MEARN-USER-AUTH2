@@ -1,29 +1,26 @@
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserAstronaut, faTimes, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
-import videoBg from '../SignUp/space.mp4'
 
 
-const api_url = process.env.REACT_APP_API_URL;
+const api_url = import.meta.env.VITE_REACT_API_URL;
 
-const SignInForm = () =>{
+const SignInForm = () => {
 
     const [data, setData] = useState({
-        Email : "",
-        Password : ""
+        Email: "",
+        Password: ""
     });
 
     const [msg, setMsg] = useState('');
 
-    const handleChange = ({currentTarget:input}) =>{
-        setData({...data,[input.name]:input.value});
+    const handleChange = ({ currentTarget: input }) => {
+        setData({ ...data, [input.name]: input.value });
     };
 
     const navigate = useNavigate();
 
-    const handleSubmit = async(e) =>{
+    const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const res = await axios.post(`${api_url}/auth`, { data });
@@ -32,47 +29,41 @@ const SignInForm = () =>{
             if (res.data.servercode) {
                 localStorage.setItem("access_token", res.data.token)
                 navigate('/home');
-            } 
+            }
         } catch (error) {
             navigate('/');
         };
     };
 
-    let style = msg.includes('Successfully')?({id:'success',icon:faCircleCheck}):({id:'error',icon:faTimes});
 
-    return(
+    return (
         <div className="kyulu App flex">
-            <video autoPlay loop muted>
-                <source src={videoBg} type="video/mp4" autoPlay/>
-            </video>
             <section className="absolute">
-                {msg?(
-                        <div className="msg absolute flex" id={style.id}>
-                            {msg}
-                            <FontAwesomeIcon icon={style.icon} className="absolute msgIcon"/>
-                        </div>
-                    ):(
-                        <div></div>
-                    )}
-                <FontAwesomeIcon icon={faUserAstronaut} className="fa-float absolute"/>
-                <label className="absolute">Welcome<br/>Back</label>
+                {msg ? (
+                    <div className="msg absolute flex">
+                        {msg}
+                    </div>
+                ) : (
+                    <div></div>
+                )}
+                <label className="absolute">Welcome<br />Back</label>
                 <form className="flex" onSubmit={handleSubmit}>
-                    <input 
-                        type="email" 
-                        name="Email" 
-                        id="mail" 
+                    <input
+                        type="email"
+                        name="Email"
+                        id="mail"
                         placeholder="Email Address"
-                        onChange={handleChange} 
+                        onChange={handleChange}
                     />
-                    <input 
-                        type="password" 
-                        name="Password" 
-                        id="passw2" 
+                    <input
+                        type="password"
+                        name="Password"
+                        id="passw2"
                         placeholder="Password"
-                        onChange={handleChange} 
+                        onChange={handleChange}
                     />
-                    <input 
-                        type="submit" 
+                    <input
+                        type="submit"
                         value="SIGN IN"
                     />
                     <Link to='/regester'>

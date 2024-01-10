@@ -1,0 +1,103 @@
+ [
+  {
+         "service": "Toilet Stain Removal", 
+         "text": "Say goodbye to stubborn stains and hello to a sparkling clean toilet! Our expert team will leave your restroom looking as good as new.",
+         "img":"./img/toilet.png"
+     },
+  {
+         "service": "Gutter Cleaning", 
+         "text": "Protect your property from water damage with our professional gutter cleaning services. Clear, clean, and efficient – we keep your gutters flowing smoothly.",
+        "img":"./img/gutter.png"
+     },
+  {
+         "service": "Lawn Mowing Cleaning", 
+         "text": "Let us transform your lawn into a pristine paradise. Our lawn mowing services guarantee a lush, manicured yard.",
+        "img":"./img/lawn.png"
+     },
+  {
+         "service": "Office Cleaning", 
+         "text": "Boost productivity and create a welcoming workspace with our office cleaning expertise. A tidy office is a productive office.",
+         "img":"./img/office2.png"
+     },
+  {
+         "service": "Terrazzo Cleaning", 
+         "text": "Reveal the hidden beauty of your terrazzo surfaces with our specialized cleaning. Your floors will shine like never before.",
+         "img":"./img/terrazo.png"
+     },
+  {
+         "service": "Wall-to-Wall Carpet Cleaning", 
+         "text": "Revive your carpets and breathe new life into your home or office. Our deep cleaning methods will leave your carpets looking and feeling fresh.",
+         "img":"./img/carpet.png"
+     },
+  {
+         "service": "Iron Cleaning", 
+         "text": "Don't let ironing be a chore. We'll keep your clothes crisp and your iron clean, making your laundry day a breeze.",
+         "img":"./img/iron.png"
+     },
+  {
+         "service": "Handwashing Services", 
+         "text": "Experience the luxury of handwashing for your delicate items. Our meticulous care ensures your clothing remains in pristine condition.",
+         "img":"./img/house.png"
+     },
+  {
+         "service": "Sofa Deep Cleaning", 
+         "text": "Indulge in the comfort of a clean and fresh sofa. Our deep cleaning will remove stains and refresh your upholstery.",
+         "img":"./img/sofa.png"
+     },
+  {
+         "service": "Decluttering and Organizing Homes and Offices", 
+         "text": "Tired of the clutter? Let our experts transform your space into an organized oasis. Rediscover the joy of a tidy home or office.",
+         "img":"./img/decluttering.png"
+     },
+  {
+         "service": "Sanitizing and Disinfecting Services", 
+         "text": "Prioritize health and safety with our thorough sanitizing and disinfecting services. We ensure your space is germ-free and safe for all.",
+         "img":"./img/sanitize.png"
+     },
+  {
+         "service": "Curtain Deep Cleaning", 
+         "text": "Rejuvenate your curtains with our deep cleaning techniques. Say goodbye to dust and allergens for a fresher and healthier home.",
+         "img":"./img/curtain.png"
+     },
+  {
+         "service": "Oven Cleaning", 
+         "text": "Make your oven sparkle and your kitchen shine. Our oven cleaning services will leave your cooking appliances looking and smelling brand new.",
+         "img":"./img/oven.png"
+     },
+  {
+         "service": "Stained Tile Cleaning", 
+         "text": "We specialize in bringing back the luster of stained tiles. Your floors and surfaces will gleam with our expert cleaning.",
+         "img":"./img/tile.jpeg"
+     },
+  {
+         "service": "School/Daycare Cleaning", 
+         "text": "Ensure a safe and clean environment for learning and play. Our school/daycare cleaning services create a healthy space for kids.",
+         "img":"./img/school.jpeg"
+     },
+  {
+         "service": "Showroom Cleaning", 
+         "text": "Make your products shine and your showroom stand out. Our showroom cleaning services leave a lasting impression on your customers.",
+         "img":"./img/showroom.jpg"
+     },
+  {
+         "service": "Housekeeping Services", 
+         "text": "Relax and enjoy your space while we take care of the daily chores. Our housekeeping services create a comfortable, tidy haven.",
+         "img":"./img/house.png"
+     },
+  {
+         "service": "Gym Cleaning", 
+         "text": "Keep your fitness center in top shape with our gym cleaning services. A clean gym promotes a healthy and inviting atmosphere.",
+         "img":"./img/gym.jpeg"
+     },
+  {
+         "service": "Window Cleaning", 
+         "text": "Enjoy crystal-clear views with our professional window cleaning. We make your windows gleam, both inside and out.",
+         "img":"./img/window.jpeg"
+     },
+  {
+         "service": "Post Construction Cleaning", 
+         "text": "After the builders leave, we step in to make your space shine. Our post-construction cleaning leaves no trace of the construction dust and debris.",
+         "img":"./img/postcon.jpeg"
+     }
+]
+

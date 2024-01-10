@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import avatar from './avatar.png';
 
-const api_url = process.env.REACT_APP_API_URL
+const api_url = import.meta.env.VITE_REACT_API_URL;
 
 const Home = () => {
 
@@ -17,25 +17,18 @@ const Home = () => {
 
     const logOut = async () => {
         try {
-            const res = await axios({
-                method: "get",
-                url: `${api_url}/logOut`,
-                headers : headers
-            });
-            if (res.data.status === 200) {
-                localStorage.removeItem("access_token");
-                navigate('/');
-            }
+            localStorage.removeItem("access_token");
+            navigate('/');
         } catch (error) {
             navigate('/');
         }
     }
-          
-    const fetchUser = async() => {
+
+    const fetchUser = async () => {
         try {
             const res = await axios({
                 method: 'get',
-                url: `${api_url}/users`,
+                url: `${api_url}/user`,
                 headers: headers
             })
             document.getElementById('fname').innerHTML = res.data.msg.FirstName;
@@ -50,12 +43,12 @@ const Home = () => {
         fetchUser();
     }, []);
 
-    return(
+    return (
         <div className="App flex home">
             <div className="kitise grid">
                 <div className="avatar flex">
                     <div className="img">
-                        <img src={ avatar } alt="user avatar"/>
+                        <img src={avatar} alt="user avatar" />
                     </div>
                 </div>
                 <div className="content">
